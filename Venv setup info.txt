@@ -1,0 +1,14 @@
+# In a powershell terminal vs code
+
+python -m venv venv
+
+Set-ExecutionPolicy Unrestricted -Scope Process
+
+.\venv\Scripts\activate.ps1
+
+pip install -r requirements.txt
+
+#in CLI:
+python main.py
+
+#Notes: Error 429 means too many requests and blocked on IP address. Reduce request load and try again in about 15 seconds
